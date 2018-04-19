@@ -29,7 +29,7 @@ public class TestSub extends BaseTest {
     }
 
     @Test(description = "Verifies subtraction for long type",
-            priority = 1, groups = {"long"},alwaysRun = true)
+            groups = {"long"},alwaysRun = true)
     public void firstMinusSecondLong() {
         long sub = calculator.sub( first, second );
         Assert.assertEquals( sub, expected );

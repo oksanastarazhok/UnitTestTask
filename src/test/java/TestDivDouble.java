@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class TestDivDouble extends  BaseTest {
 
     @Test(description = "Verifies devision for double type", dataProvider = "DataForDivDouble",
-            groups = {"double"}, priority = 3)
+            groups = {"double"})
     public void firstDivideSecond(double first, double second, double expected){
         double div = calculator.div( first,second );
         Assert.assertEquals( div,expected );

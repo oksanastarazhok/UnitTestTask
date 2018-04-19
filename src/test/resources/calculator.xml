@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Calculator" verbose="1">
-    <test name="Regression">
+<suite name="Calculator" verbose="1" parallel="methods" thread-count="5">
+    <test name="Regression" preserve-order="false">
     <groups>
+           <dependencies>
+                <group name="double" depends-on="long" />
+                <group name="negative" depends-on="positive" />
+            </dependencies>
+
     <run>
         <include name ="config"></include>
         <include name ="positive"></include>

@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class TestTg extends BaseTest {
 
-    @Test(dataProvider = "dataForTg", groups = {"double"},dependsOnGroups = "long")
+    @Test(dataProvider = "dataForTg", groups = {"double"})
     public void tgOfNumber(double first, double expected) {
         double tg = calculator.tg( first );
         Assert.assertEquals( tg, expected );

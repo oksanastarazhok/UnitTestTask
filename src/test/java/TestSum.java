@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class TestSum extends BaseTest {
 
     @Test(description = "Verifies sum of two numbers for Long type",
-            dataProvider = "DataForSumLong", priority = 0, groups = {"long"})
+            dataProvider = "DataForSumLong", groups = {"long"})
     public void firstPlusSecond(long first, long second, long expected){
         long sum = calculator.sum( first,second );
         Assert.assertEquals( sum, expected );

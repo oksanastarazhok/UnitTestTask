@@ -15,7 +15,7 @@ public class TestDiv extends BaseTest {
                 {0, 1, 0}};
     }
 
-    @Test (dataProvider = "DataForDiv",priority = 2, groups = {"long"})
+    @Test (dataProvider = "DataForDiv", groups = {"long"})
     public void firstDivideSecond(long first, long second, long expected){
         long div = calculator.div( first, second );
         Assert.assertEquals( div, expected );
