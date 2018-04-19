@@ -4,12 +4,6 @@ import org.testng.annotations.Test;
 
 public class TestPow extends BaseTest {
 
-    @Test(dataProvider = "dataForPow", groups = {"double"})
-    public void testPow(double first, double second, double expected) {
-        double pow = calculator.pow( first, second );
-        Assert.assertEquals( pow, expected );
-    }
-
     @DataProvider(name = "dataForPow")
     public static java.lang.Object[][] dataForPow() {
         return new java.lang.Object[][]{
@@ -22,10 +16,17 @@ public class TestPow extends BaseTest {
 
     }
 
+    @Test(dataProvider = "dataForPow", groups = {"double"})
+    public void testPow(double first, double second, double expected) {
+        double pow = calculator.pow( first, second );
+        Assert.assertEquals( pow, expected );
+    }
+
     public class TestPowNegative extends BaseTest {
         @Test(expectedExceptions = ArithmeticException.class, expectedExceptionsMessageRegExp = "Attempt to divide by zero",
                 groups = {"negative"})
         public void powDivisionOnZero() {
             calculator.pow( 0, -1 );
         }
-    }}
+    }
+}

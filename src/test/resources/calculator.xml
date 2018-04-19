@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Calculator" verbose="1" parallel="methods" thread-count="5">
+<suite name="Calculator" verbose="1" parallel="tests" thread-count="5">
     <test name="Regression" preserve-order="false">
-    <groups>
-           <dependencies>
-                <group name="double" depends-on="long" />
-                <group name="negative" depends-on="positive" />
-            </dependencies>
+        <groups>
+            <run>
+                <include name="config"></include>
+                <include name="positive"></include>
+                <include name="double"></include>
+                <include name="long"></include>
+                <exclude name="negative"></exclude>
 
-    <run>
-        <include name ="config"></include>
-        <include name ="positive"></include>
-        <include name ="double"></include>
-        <include name ="long"></include>
-        <include name ="negative"></include>
+            </run>
 
-    </run>>
-    </groups>
+        </groups>
         <classes>
-            <class name = "TestDivDouble"/>
-            <class name = "TestMultDouble"/>
-            <class name = "TestSubDouble"/>
-            <class name = "TestSumDouble"/>
-            <class name = "TestSum"/>
-            <class name = "TestSub"/>
-            <class name = "TestMult"/>
-            <class name = "TestDiv"/>
-            <class name = "TestCos"/>
-            <class name = "TestCtg"/>
-            <class name = "TestIsPositive"/>
-            <class name = "TestIsNegative"/>
-            <class name = "TestMultDouble"/>
-            <class name = "TestPow"/>
-            <class name = "TestSin"/>
-            <class name = "TestSqrt"/>
-            <class name = "TestTg"/>
+            <class name="TestDivDouble"/>
+            <class name="TestMultDouble"/>
+            <class name="TestSubDouble"/>
+            <class name="TestSumDouble"/>
+            <class name="TestSum"/>
+            <class name="TestSub"/>
+            <class name="TestMult"/>
+            <class name="TestDiv"/>
+            <class name="TestCos"/>
+            <class name="TestCtg"/>
+            <class name="TestIsPositive"/>
+            <class name="TestIsNegative"/>
+            <class name="TestMultDouble"/>
+            <class name="TestPow"/>
+            <class name="TestSin"/>
+            <class name="TestSqrt"/>
+            <class name="TestTg"/>
         </classes>
     </test>
 </suite>

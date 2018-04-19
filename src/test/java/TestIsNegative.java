@@ -14,18 +14,18 @@ public class TestIsNegative extends BaseTest {
     }
 
     @DataProvider(name = "dataForIsNegative")
-    public static Object[][]dataForIsNegative(){
+    public static Object[][] dataForIsNegative() {
         return new Object[][]{
-                {1L, false } ,
+                {1L, false},
                 {-1L, true},
                 {0L, false},
                 {-78554221L, true}};
     }
 
-    @Test (groups = {"negative"})
-    public void checkNumber(){
-        boolean result = calculator.isPositive(val);
-        Assert.assertEquals( result,expected );
+    @Test(groups = {"negative"})
+    public void checkNumber() {
+        boolean result = calculator.isPositive( val );
+        Assert.assertEquals( result, expected );
 
     }
 }

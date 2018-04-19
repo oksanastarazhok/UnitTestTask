@@ -8,7 +8,7 @@ public class TestMultDouble extends BaseTest {
     private double second;
     private double expected;
 
-    @Factory (dataProvider = "DataForMultDouble")
+    @Factory(dataProvider = "DataForMultDouble")
     public TestMultDouble(double first, double second, double expected) {
         this.first = first;
         this.second = second;
@@ -16,7 +16,7 @@ public class TestMultDouble extends BaseTest {
     }
 
     @DataProvider(name = "DataForMultDouble")
-    public static Object[][] DataForMultDouble(){
+    public static Object[][] DataForMultDouble() {
         return new Object[][]{
                 {0, 100.00, 0},
                 {-1.00, -1.00, 1.00},
@@ -25,9 +25,9 @@ public class TestMultDouble extends BaseTest {
         };
     }
 
-    @Test (groups = {"double"})
-    public void firstTimesSecond(){
+    @Test(groups = {"double"})
+    public void firstTimesSecond() {
         double mult = calculator.mult( first, second );
-        Assert.assertEquals( mult,expected );
+        Assert.assertEquals( mult, expected );
     }
 }
