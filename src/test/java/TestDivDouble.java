@@ -17,4 +17,11 @@ public class TestDivDouble extends  BaseTest {
                 {100.00, 50.00, 2.00},
                 {-1.5, -1.2, 1.25}};
     }
-}
+
+    public class TestDivNegativeDouble extends BaseTest{
+        @Test(expectedExceptions = NumberFormatException.class, expectedExceptionsMessageRegExp = "Attempt to divide by zero",
+                groups = {"negative"})
+        public void doubleDivisionOnZero(){
+            calculator.div( 1.56,0.0 );
+        }
+}}

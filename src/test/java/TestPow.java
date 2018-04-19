@@ -21,4 +21,11 @@ public class TestPow extends BaseTest {
                 {5., 0, 1.}};
 
     }
-}
+
+    public class TestPowNegative extends BaseTest {
+        @Test(expectedExceptions = ArithmeticException.class, expectedExceptionsMessageRegExp = "Attempt to divide by zero",
+                groups = {"negative"})
+        public void powDivisionOnZero() {
+            calculator.pow( 0, -1 );
+        }
+    }}
