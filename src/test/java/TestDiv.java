@@ -5,16 +5,7 @@ import org.testng.annotations.Test;
 
 public class TestDiv extends BaseTest {
 
-    private long first;
-    private long second;
-    private long expected;
 
-    @Factory(dataProvider = "DataForDiv")
-    public TestDiv(long first, long second, long expected) {
-        this.first = first;
-        this.second = second;
-        this.expected = expected;
-    }
 
     @DataProvider(name = "DataForDiv")
     public static Object[][] DataForDiv(){
@@ -24,13 +15,19 @@ public class TestDiv extends BaseTest {
                 {0, 1, 0}};
     }
 
-    @Test (priority = 2, groups = {"long"})
-    public void firstDivideSecond(){
+    @Test (dataProvider = "DataForDiv",priority = 2, groups = {"long"})
+    public void firstDivideSecond(long first, long second, long expected){
         long div = calculator.div( first, second );
         Assert.assertEquals( div, expected );
+
+
     }
 
-
+    @Test(expectedExceptions = NumberFormatException.class, expectedExceptionsMessageRegExp = "Attempt to divide by zero",
+            groups = {"negative"})
+    public void devisionOnZero() {
+        calculator.div( 1, 0 );
+    }
 
 
 }
