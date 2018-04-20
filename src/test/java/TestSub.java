@@ -9,14 +9,12 @@ public class TestSub extends BaseTest {
     private long expected;
 
 
-
     @Factory(dataProvider = "DataForSub")
     public TestSub(long first, long second, long expected) {
         this.first = first;
         this.second = second;
         this.expected = expected;
     }
-
 
 
     @DataProvider(name = "DataForSub")
@@ -29,10 +27,10 @@ public class TestSub extends BaseTest {
     }
 
     @Test(description = "Verifies subtraction for long type",
-            priority = 1, groups = {"long"},alwaysRun = true)
+            priority = 1, groups = {"long"}, alwaysRun = true)
     public void firstMinusSecondLong() {
-        long sub = calculator.sub( first, second );
-        Assert.assertEquals( sub, expected );
+        long sub = calculator.sub(first, second);
+        Assert.assertEquals(sub, expected);
 
     }
 

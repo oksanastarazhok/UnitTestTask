@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="13" total="63" passed="50">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="53" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+    <groups>
+      <group name="negative">
+        <method signature="TestDivNegativeDouble.doubleDivisionOnZero()" name="doubleDivisionOnZero" class="TestDivNegativeDouble"/>
+        <method signature="TestIsNegative.checkNumber()" name="checkNumber" class="TestIsNegative"/>
+        <method signature="TestDivNegative.devisionOnZero()" name="devisionOnZero" class="TestDivNegative"/>
+        <method signature="TestPowNegative.powDivisionOnZero()" name="powDivisionOnZero" class="TestPowNegative"/>
+      </group>
+      <group name="double">
+        <method signature="TestDivDouble.firstDivideSecond(double, double, double)" name="firstDivideSecond" class="TestDivDouble"/>
+        <method signature="TestSin.sinOfNumber(double, double)" name="sinOfNumber" class="TestSin"/>
+        <method signature="TestSumDouble.firstPlusSecond(double, double, double)" name="firstPlusSecond" class="TestSumDouble"/>
+        <method signature="TestTg.tgOfNumber(double, double)" name="tgOfNumber" class="TestTg"/>
+        <method signature="TestSqrt.sqrtOfNumber(double, double)" name="sqrtOfNumber" class="TestSqrt"/>
+        <method signature="TestCos.cosOfNumber(double, double)" name="cosOfNumber" class="TestCos"/>
+        <method signature="TestMultDouble.firstTimesSecond()" name="firstTimesSecond" class="TestMultDouble"/>
+        <method signature="TestCtg.ctgOfNumber(double, double)" name="ctgOfNumber" class="TestCtg"/>
+        <method signature="TestSubDouble.firstMinusSecondDP()" name="firstMinusSecondDP" class="TestSubDouble"/>
+        <method signature="TestPow.testPow(double, double, double)" name="testPow" class="TestPow"/>
+      </group>
+      <group name="positive">
+        <method signature="TestIsPositive.checkNumber()" name="checkNumber" class="TestIsPositive"/>
+      </group>
+      <group name="long">
+        <method signature="TestDiv.firstDivideSecond()" name="firstDivideSecond" class="TestDiv"/>
+        <method signature="TestMult.firstTimesSecond()" name="firstTimesSecond" class="TestMult"/>
+        <method signature="TestSub.firstMinusSecondLong()" name="firstMinusSecondLong" class="TestSub"/>
+        <method signature="TestSum.firstPlusSecond(long, long, long)" name="firstPlusSecond" class="TestSum"/>
+      </group>
+    </groups>
+    <test name="Command line test" duration-ms="53" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+      <class name="TestPowNegative">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="FAIL" signature="powDivisionOnZero()" name="powDivisionOnZero" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Expected exception java.lang.ArithmeticException but got org.testng.TestException: 
+Method TestPowNegative.powDivisionOnZero() should have thrown an exception of class java.lang.ArithmeticException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Expected exception java.lang.ArithmeticException but got org.testng.TestException: 
+Method TestPowNegative.powDivisionOnZero() should have thrown an exception of class java.lang.ArithmeticException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1417)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.testng.TestException: 
+Method TestPowNegative.powDivisionOnZero() should have thrown an exception of class java.lang.ArithmeticException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1443)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:722)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+      <class name="TestSub">
+        <test-method status="PASS" signature="firstMinusSecondLong()" name="firstMinusSecondLong" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies subtraction for long type" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstMinusSecondLong()" name="firstMinusSecondLong" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies subtraction for long type" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstMinusSecondLong()" name="firstMinusSecondLong" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies subtraction for long type" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstMinusSecondLong()" name="firstMinusSecondLong" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies subtraction for long type" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestMultDouble">
+        <test-method status="PASS" signature="firstTimesSecond()" name="firstTimesSecond" duration-ms="15" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstTimesSecond()" name="firstTimesSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstTimesSecond()" name="firstTimesSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="FAIL" signature="firstTimesSecond()" name="firstTimesSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<0.25> but was:<0.0>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<0.25> but was:<0.0>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:160)
+	at TestMultDouble.firstTimesSecond(TestMultDouble.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestIsNegative">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="FAIL" signature="checkNumber()" name="checkNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<false> but was:<true>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:281)
+	at org.testng.Assert.assertEquals(Assert.java:291)
+	at TestIsNegative.checkNumber(TestIsNegative.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="FAIL" signature="checkNumber()" name="checkNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:281)
+	at org.testng.Assert.assertEquals(Assert.java:291)
+	at TestIsNegative.checkNumber(TestIsNegative.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkNumber()" name="checkNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="FAIL" signature="checkNumber()" name="checkNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:281)
+	at org.testng.Assert.assertEquals(Assert.java:291)
+	at TestIsNegative.checkNumber(TestIsNegative.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestSin">
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="sinOfNumber(double, double)" name="sinOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="sinOfNumber(double, double)" name="sinOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[270]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="sinOfNumber(double, double)" name="sinOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.49999999999999994]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="sinOfNumber(double, double)" name="sinOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.7071067811865475]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="TestPow">
+        <test-method status="PASS" signature="testPow(double, double, double)" name="testPow" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testPow(double, double, double)" name="testPow" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testPow(double, double, double)" name="testPow" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testPow(double, double, double)" name="testPow" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[166.375]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="testPow(double, double, double)" name="testPow" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testPow(double, double, double)" name="testPow" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.04]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="TestCtg">
+        <test-method status="PASS" signature="ctgOfNumber(double, double)" name="ctgOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[180]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="ctgOfNumber(double, double)" name="ctgOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[360]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="ctgOfNumber(double, double)" name="ctgOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestDivDouble">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstDivideSecond(double, double, double)" name="firstDivideSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies devision for double type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="firstDivideSecond(double, double, double)" name="firstDivideSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies devision for double type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1.2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.25]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestSqrt">
+        <test-method status="PASS" signature="sqrtOfNumber(double, double)" name="sqrtOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="sqrtOfNumber(double, double)" name="sqrtOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="sqrtOfNumber(double, double)" name="sqrtOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-25.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="TestSubDouble">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstMinusSecondDP()" name="firstMinusSecondDP" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies subtraction for double type" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="FAIL" signature="firstMinusSecondDP()" name="firstMinusSecondDP" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies subtraction for double type" finished-at="2018-04-20T10:18:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<-0.7> but was:<-0.7000000000000002>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<-0.7> but was:<-0.7000000000000002>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:160)
+	at TestSubDouble.firstMinusSecondDP(TestSubDouble.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="firstMinusSecondDP()" name="firstMinusSecondDP" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies subtraction for double type" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestDiv">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstDivideSecond()" name="firstDivideSecond" duration-ms="2" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstDivideSecond()" name="firstDivideSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstDivideSecond()" name="firstDivideSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="3" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestDivNegative">
+        <test-method status="PASS" signature="devisionOnZero()" name="devisionOnZero" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[Attempt to divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: Attempt to divide by zero
+	at com.Calculator.div(Calculator.java:33)
+	at TestDivNegative.devisionOnZero(TestDivNegative.java:8)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestSum">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(long, long, long)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for Long type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(long, long, long)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for Long type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7123456]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[14246912]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(long, long, long)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for Long type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(long, long, long)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for Long type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="TestIsPositive">
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkNumber()" name="checkNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkNumber()" name="checkNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkNumber()" name="checkNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkNumber()" name="checkNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestTg">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="FAIL" signature="tgOfNumber(double, double)" name="tgOfNumber" duration-ms="16" depends-on-groups="long" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<0.0> but was:<NaN>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<0.0> but was:<NaN>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:160)
+	at TestTg.tgOfNumber(TestTg.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="tgOfNumber(double, double)" name="tgOfNumber" duration-ms="0" depends-on-groups="long" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.9981778976111987]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<0.9981778976111987> but was:<1.0>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<0.9981778976111987> but was:<1.0>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:160)
+	at TestTg.tgOfNumber(TestTg.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="tgOfNumber(double, double)" name="tgOfNumber" duration-ms="0" depends-on-groups="long" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90.328]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestCos">
+        <test-method status="FAIL" signature="cosOfNumber(double, double)" name="cosOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<0.0> but was:<1.0>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<0.0> but was:<1.0>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:160)
+	at TestCos.cosOfNumber(TestCos.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="cosOfNumber(double, double)" name="cosOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[180]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<-1.0> but was:<1.2246467991473532E-16>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<-1.0> but was:<1.2246467991473532E-16>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:160)
+	at TestCos.cosOfNumber(TestCos.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="FAIL" signature="cosOfNumber(double, double)" name="cosOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<1.0> but was:<0.0>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<1.0> but was:<0.0>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:160)
+	at TestCos.cosOfNumber(TestCos.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="FAIL" signature="cosOfNumber(double, double)" name="cosOfNumber" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[360]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<1.0> but was:<-2.4492935982947064E-16>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<1.0> but was:<-2.4492935982947064E-16>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:160)
+	at TestCos.cosOfNumber(TestCos.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+      <class name="TestDivNegativeDouble">
+        <test-method status="FAIL" signature="doubleDivisionOnZero()" name="doubleDivisionOnZero" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Expected exception java.lang.NumberFormatException but got org.testng.TestException: 
+Method TestDivNegativeDouble.doubleDivisionOnZero() should have thrown an exception of class java.lang.NumberFormatException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Expected exception java.lang.NumberFormatException but got org.testng.TestException: 
+Method TestDivNegativeDouble.doubleDivisionOnZero() should have thrown an exception of class java.lang.NumberFormatException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1417)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.testng.TestException: 
+Method TestDivNegativeDouble.doubleDivisionOnZero() should have thrown an exception of class java.lang.NumberFormatException
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1443)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:722)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	... 27 more
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestMult">
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstTimesSecond()" name="firstTimesSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstTimesSecond()" name="firstTimesSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstTimesSecond()" name="firstTimesSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstTimesSecond()" name="firstTimesSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+      </class>
+      <class name="TestSumDouble">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(double, double, double)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for double type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-5.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-10.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="checkTime()" name="checkTime" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(double, double, double)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for double type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(double, double, double)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for double type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="setup()" name="setup" is-config="true" duration-ms="0" started-at="2018-04-20T10:18:20Z" finished-at="2018-04-20T10:18:20Z">
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(double, double, double)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for double type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="firstPlusSecond(double, double, double)" name="firstPlusSecond" duration-ms="0" started-at="2018-04-20T10:18:20Z" description="Verifies sum of two numbers for double type" finished-at="2018-04-20T10:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7.123456]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7.123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[14.246912]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

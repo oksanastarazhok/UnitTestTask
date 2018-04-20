@@ -26,10 +26,10 @@ public class TestMult extends BaseTest {
         };
     }
 
-    @Test (priority = 3, groups = {"long"})
+    @Test(priority = 3, groups = {"long"})
     public void firstTimesSecond() {
-        long mult = calculator.mult( first, second );
-        Assert.assertEquals( mult, expected );
+        long mult = calculator.mult(first, second);
+        Assert.assertEquals(mult, expected);
     }
 
 }

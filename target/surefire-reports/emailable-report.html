@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">50</td><td class="numi">50</td><td class="numi">0</td><td class="numi_attn">13</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">TestIsNegative<td><a href="#m1"><b>checkNumber</b> (negative) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">TestTg<td><a href="#m2"><b>tgOfNumber</b> (double) </a></td><td class="numi">2</td><td class="numi">16</td></tr>
+<tr class="failedodd"><td rowspan="1">TestIsNegative<td><a href="#m3"><b>checkNumber</b> (negative) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="2">TestCos<td><a href="#m4"><b>cosOfNumber</b> (double) </a></td><td class="numi">4</td><td class="numi">0</td></tr><tr class="failedeven"><td><a href="#m5"><b>cosOfNumber</b> (double) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">TestSubDouble<td><a href="#m6"><b>firstMinusSecondDP</b> (double) ("Verifies subtraction for double type")</a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">TestCos<td><a href="#m7"><b>cosOfNumber</b> (double) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">TestPowNegative<td><a href="#m8"><b>powDivisionOnZero</b> (negative) </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">TestTg<td><a href="#m9"><b>tgOfNumber</b> (double) </a></td><td class="numi">2</td><td class="numi">16</td></tr>
+<tr class="failedodd"><td rowspan="1">TestDivNegativeDouble<td><a href="#m10"><b>doubleDivisionOnZero</b> (negative) </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">TestCos<td><a href="#m11"><b>cosOfNumber</b> (double) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">TestIsNegative<td><a href="#m12"><b>checkNumber</b> (negative) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">TestMultDouble<td><a href="#m13"><b>firstTimesSecond</b> (double) </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">TestMultDouble<td><a href="#m14"><b>firstTimesSecond</b> (double) </a></td><td class="numi">3</td><td class="numi">15</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSqrt<td><a href="#m15"><b>sqrtOfNumber</b> (double) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestPow<td><a href="#m16"><b>testPow</b> (double) </a></td><td class="numi">6</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSub<td><a href="#m17"><b>firstMinusSecondLong</b> (long) ("Verifies subtraction for long type")</a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestCtg<td><a href="#m18"><b>ctgOfNumber</b> (double) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSum<td><a href="#m19"><b>firstPlusSecond</b> (long) ("Verifies sum of two numbers for Long type")</a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSin<td><a href="#m20"><b>sinOfNumber</b> (double) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestPow<td><a href="#m21"><b>testPow</b> (double) </a></td><td class="numi">6</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestDiv<td><a href="#m22"><b>firstDivideSecond</b> (long) </a></td><td class="numi">3</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="1">TestMult<td><a href="#m23"><b>firstTimesSecond</b> (long) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestIsPositive<td><a href="#m24"><b>checkNumber</b> (positive) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSumDouble<td><a href="#m25"><b>firstPlusSecond</b> (double) ("Verifies sum of two numbers for double type")</a></td><td class="numi">5</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestIsPositive<td><a href="#m26"><b>checkNumber</b> (positive) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestPow<td><a href="#m27"><b>testPow</b> (double) </a></td><td class="numi">6</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">TestDivDouble<td><a href="#m28"><b>firstDivideSecond</b> (double) ("Verifies devision for double type")</a></td><td class="numi">2</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m29"><b>firstDivideSecond</b> (double) ("Verifies devision for double type")</a></td><td class="numi">2</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSin<td><a href="#m30"><b>sinOfNumber</b> (double) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestCtg<td><a href="#m31"><b>ctgOfNumber</b> (double) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestPow<td><a href="#m32"><b>testPow</b> (double) </a></td><td class="numi">6</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestCtg<td><a href="#m33"><b>ctgOfNumber</b> (double) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSqrt<td><a href="#m34"><b>sqrtOfNumber</b> (double) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSum<td><a href="#m35"><b>firstPlusSecond</b> (long) ("Verifies sum of two numbers for Long type")</a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestMult<td><a href="#m36"><b>firstTimesSecond</b> (long) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSqrt<td><a href="#m37"><b>sqrtOfNumber</b> (double) </a></td><td class="numi">3</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSumDouble<td><a href="#m38"><b>firstPlusSecond</b> (double) ("Verifies sum of two numbers for double type")</a></td><td class="numi">5</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestMult<td><a href="#m39"><b>firstTimesSecond</b> (long) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestDivNegative<td><a href="#m40"><b>devisionOnZero</b> (negative) </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">TestSin<td><a href="#m41"><b>sinOfNumber</b> (double) </a></td><td class="numi">4</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m42"><b>sinOfNumber</b> (double) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSubDouble<td><a href="#m43"><b>firstMinusSecondDP</b> (double) ("Verifies subtraction for double type")</a></td><td class="numi">2</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestIsNegative<td><a href="#m44"><b>checkNumber</b> (negative) </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestDiv<td><a href="#m45"><b>firstDivideSecond</b> (long) </a></td><td class="numi">3</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">TestIsPositive<td><a href="#m46"><b>checkNumber</b> (positive) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSumDouble<td><a href="#m47"><b>firstPlusSecond</b> (double) ("Verifies sum of two numbers for double type")</a></td><td class="numi">5</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestMultDouble<td><a href="#m48"><b>firstTimesSecond</b> (double) </a></td><td class="numi">3</td><td class="numi">15</td></tr>
+<tr class="passedeven"><td rowspan="1">TestTg<td><a href="#m49"><b>tgOfNumber</b> (double) </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSub<td><a href="#m50"><b>firstMinusSecondLong</b> (long) ("Verifies subtraction for long type")</a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestMult<td><a href="#m51"><b>firstTimesSecond</b> (long) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestMultDouble<td><a href="#m52"><b>firstTimesSecond</b> (double) </a></td><td class="numi">3</td><td class="numi">15</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSum<td><a href="#m53"><b>firstPlusSecond</b> (long) ("Verifies sum of two numbers for Long type")</a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSumDouble<td><a href="#m54"><b>firstPlusSecond</b> (double) ("Verifies sum of two numbers for double type")</a></td><td class="numi">5</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestSum<td><a href="#m55"><b>firstPlusSecond</b> (long) ("Verifies sum of two numbers for Long type")</a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSumDouble<td><a href="#m56"><b>firstPlusSecond</b> (double) ("Verifies sum of two numbers for double type")</a></td><td class="numi">5</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">TestSub<td><a href="#m57"><b>firstMinusSecondLong</b> (long) ("Verifies subtraction for long type")</a></td><td class="numi">4</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m58"><b>firstMinusSecondLong</b> (long) ("Verifies subtraction for long type")</a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestPow<td><a href="#m59"><b>testPow</b> (double) </a></td><td class="numi">6</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestDiv<td><a href="#m60"><b>firstDivideSecond</b> (long) </a></td><td class="numi">3</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">TestIsPositive<td><a href="#m61"><b>checkNumber</b> (positive) </a></td><td class="numi">4</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">TestPow<td><a href="#m62"><b>testPow</b> (double) </a></td><td class="numi">6</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">TestSubDouble<td><a href="#m63"><b>firstMinusSecondDP</b> (double) ("Verifies subtraction for double type")</a></td><td class="numi">2</td><td class="numi">0</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>TestIsNegative:checkNumber</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;true&gt; but was:&lt;false&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:281)
+<br/>at org.testng.Assert.assertEquals(Assert.java:291)
+<br/>at TestIsNegative.checkNumber(TestIsNegative.java:28)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>TestTg:tgOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">0.0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;0.0&gt; but was:&lt;NaN&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:160)
+<br/>at TestTg.tgOfNumber(TestTg.java:10)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>TestIsNegative:checkNumber</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;true&gt; but was:&lt;false&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:281)
+<br/>at org.testng.Assert.assertEquals(Assert.java:291)
+<br/>at TestIsNegative.checkNumber(TestIsNegative.java:28)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>TestCos:cosOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">180</td>
+<td style="padding-left:.5em;padding-right:2em">-1.0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;-1.0&gt; but was:&lt;1.2246467991473532E-16&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:160)
+<br/>at TestCos.cosOfNumber(TestCos.java:11)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>TestCos:cosOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">0.0</td>
+<td style="padding-left:.5em;padding-right:2em">1.0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;1.0&gt; but was:&lt;0.0&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:160)
+<br/>at TestCos.cosOfNumber(TestCos.java:11)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>TestSubDouble:firstMinusSecondDP</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;-0.7&gt; but was:&lt;-0.7000000000000002&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:160)
+<br/>at TestSubDouble.firstMinusSecondDP(TestSubDouble.java:30)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>TestCos:cosOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">90</td>
+<td style="padding-left:.5em;padding-right:2em">0.0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;0.0&gt; but was:&lt;1.0&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:160)
+<br/>at TestCos.cosOfNumber(TestCos.java:11)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>TestPowNegative:powDivisionOnZero</h2>
+<div style="padding-left:3em">
+<p>
+Expected exception java.lang.ArithmeticException but got org.testng.TestException: 
+Method TestPowNegative.powDivisionOnZero() should have thrown an exception of class java.lang.ArithmeticException</p>
+org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1417)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:757)
+<br/>at org.testng.TestRunner.run(TestRunner.java:608)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+<br/>at org.testng.TestNG.run(TestNG.java:999)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<br/>1 lines not shown
+<p>Caused by 
+Method TestPowNegative.powDivisionOnZero() should have thrown an exception of class java.lang.ArithmeticException</p>
+org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1443)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:722)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:757)
+<br/>at org.testng.TestRunner.run(TestRunner.java:608)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+<br/>at org.testng.TestNG.run(TestNG.java:999)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>TestTg:tgOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">3.5</td>
+<td style="padding-left:.5em;padding-right:2em">0.9981778976111987</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;0.9981778976111987&gt; but was:&lt;1.0&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:160)
+<br/>at TestTg.tgOfNumber(TestTg.java:10)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>TestDivNegativeDouble:doubleDivisionOnZero</h2>
+<div style="padding-left:3em">
+<p>
+Expected exception java.lang.NumberFormatException but got org.testng.TestException: 
+Method TestDivNegativeDouble.doubleDivisionOnZero() should have thrown an exception of class java.lang.NumberFormatException</p>
+org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1417)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:757)
+<br/>at org.testng.TestRunner.run(TestRunner.java:608)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+<br/>at org.testng.TestNG.run(TestNG.java:999)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<br/>1 lines not shown
+<p>Caused by 
+Method TestDivNegativeDouble.doubleDivisionOnZero() should have thrown an exception of class java.lang.NumberFormatException</p>
+org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1443)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:722)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:757)
+<br/>at org.testng.TestRunner.run(TestRunner.java:608)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+<br/>at org.testng.TestNG.run(TestNG.java:999)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>TestCos:cosOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">360</td>
+<td style="padding-left:.5em;padding-right:2em">1.0</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected:&lt;1.0&gt; but was:&lt;-2.4492935982947064E-16&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:160)
+<br/>at TestCos.cosOfNumber(TestCos.java:11)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>TestIsNegative:checkNumber</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;false&gt; but was:&lt;true&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:281)
+<br/>at org.testng.Assert.assertEquals(Assert.java:291)
+<br/>at TestIsNegative.checkNumber(TestIsNegative.java:28)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>TestMultDouble:firstTimesSecond</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;0.25&gt; but was:&lt;0.0&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:160)
+<br/>at TestMultDouble.firstTimesSecond(TestMultDouble.java:31)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>TestMultDouble:firstTimesSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>TestSqrt:sqrtOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">-1.0</td>
+<td style="padding-left:.5em;padding-right:2em">1.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>TestPow:testPow</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">0.0</td>
+<td style="padding-left:.5em;padding-right:2em">5</td>
+<td style="padding-left:.5em;padding-right:2em">0.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>TestSub:firstMinusSecondLong</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>TestCtg:ctgOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">180</td>
+<td style="padding-left:.5em;padding-right:2em">1.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>TestSum:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>TestSin:sinOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">90</td>
+<td style="padding-left:.5em;padding-right:2em">1</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>TestPow:testPow</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">-1.0</td>
+<td style="padding-left:.5em;padding-right:2em">-1</td>
+<td style="padding-left:.5em;padding-right:2em">-1.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>TestDiv:firstDivideSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>TestMult:firstTimesSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>TestIsPositive:checkNumber</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>TestSumDouble:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">-5.0</td>
+<td style="padding-left:.5em;padding-right:2em">-5.0</td>
+<td style="padding-left:.5em;padding-right:2em">-10.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>TestIsPositive:checkNumber</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>TestPow:testPow</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">5.0</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">1.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>TestDivDouble:firstDivideSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">100.0</td>
+<td style="padding-left:.5em;padding-right:2em">50.0</td>
+<td style="padding-left:.5em;padding-right:2em">2.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>TestDivDouble:firstDivideSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">-1.5</td>
+<td style="padding-left:.5em;padding-right:2em">-1.2</td>
+<td style="padding-left:.5em;padding-right:2em">1.25</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>TestSin:sinOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">45</td>
+<td style="padding-left:.5em;padding-right:2em">0.7071067811865475</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>TestCtg:ctgOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">360</td>
+<td style="padding-left:.5em;padding-right:2em">1.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>TestPow:testPow</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">5.5</td>
+<td style="padding-left:.5em;padding-right:2em">3</td>
+<td style="padding-left:.5em;padding-right:2em">166.375</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>TestCtg:ctgOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>TestSqrt:sqrtOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>TestSum:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">-1</td>
+<td style="padding-left:.5em;padding-right:2em">-1</td>
+<td style="padding-left:.5em;padding-right:2em">-2</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m36"></a><h2>TestMult:firstTimesSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>TestSqrt:sqrtOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">-25.0</td>
+<td style="padding-left:.5em;padding-right:2em">5.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>TestSumDouble:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m39"></a><h2>TestMult:firstTimesSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>TestDivNegative:devisionOnZero</h2>
+<div style="padding-left:3em">
+<p>Attempt to divide by zero</p>
+com.Calculator.div(Calculator.java:33)
+<br/>at TestDivNegative.devisionOnZero(TestDivNegative.java:8)
+<br/>36 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>TestSin:sinOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">270</td>
+<td style="padding-left:.5em;padding-right:2em">-1</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>TestSin:sinOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">30</td>
+<td style="padding-left:.5em;padding-right:2em">0.49999999999999994</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>TestSubDouble:firstMinusSecondDP</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>TestIsNegative:checkNumber</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>TestDiv:firstDivideSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>TestIsPositive:checkNumber</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m47"></a><h2>TestSumDouble:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">1.5</td>
+<td style="padding-left:.5em;padding-right:2em">1.5</td>
+<td style="padding-left:.5em;padding-right:2em">3.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>TestMultDouble:firstTimesSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m49"></a><h2>TestTg:tgOfNumber</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">90.328</td>
+<td style="padding-left:.5em;padding-right:2em">1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m50"></a><h2>TestSub:firstMinusSecondLong</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m51"></a><h2>TestMult:firstTimesSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m52"></a><h2>TestMultDouble:firstTimesSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m53"></a><h2>TestSum:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">1</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+<td style="padding-left:.5em;padding-right:2em">1</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m54"></a><h2>TestSumDouble:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">-1.0</td>
+<td style="padding-left:.5em;padding-right:2em">1.0</td>
+<td style="padding-left:.5em;padding-right:2em">0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m55"></a><h2>TestSum:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">7123456</td>
+<td style="padding-left:.5em;padding-right:2em">7123456</td>
+<td style="padding-left:.5em;padding-right:2em">14246912</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m56"></a><h2>TestSumDouble:firstPlusSecond</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">7.123456</td>
+<td style="padding-left:.5em;padding-right:2em">7.123456</td>
+<td style="padding-left:.5em;padding-right:2em">14.246912</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m57"></a><h2>TestSub:firstMinusSecondLong</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m58"></a><h2>TestSub:firstMinusSecondLong</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m59"></a><h2>TestPow:testPow</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">10.0</td>
+<td style="padding-left:.5em;padding-right:2em">2</td>
+<td style="padding-left:.5em;padding-right:2em">100.0</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m60"></a><h2>TestDiv:firstDivideSecond</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m61"></a><h2>TestIsPositive:checkNumber</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m62"></a><h2>TestPow:testPow</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th><th style="padding-left:1em;padding-right:1em">Parameter #3</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">25.0</td>
+<td style="padding-left:.5em;padding-right:2em">-1</td>
+<td style="padding-left:.5em;padding-right:2em">0.04</td>
+</tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m63"></a><h2>TestSubDouble:firstMinusSecondDP</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

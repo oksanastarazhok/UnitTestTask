@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)" preserve-order="false">
+    <classes>
+      <class name="TestDiv">
+        <methods>
+          <include name="firstDivideSecond"/>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestSub">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+          <include name="firstMinusSecondLong"/>
+        </methods>
+      </class>
+      <class name="TestPowNegative">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+          <include name="powDivisionOnZero"/>
+        </methods>
+      </class>
+      <class name="TestCtg">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestIsNegative">
+        <methods>
+          <include name="checkNumber"/>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestMult">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="firstTimesSecond"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestSum">
+        <methods>
+          <include name="firstPlusSecond"/>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestMultDouble">
+        <methods>
+          <include name="setup"/>
+          <include name="firstTimesSecond"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestSqrt">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestPow">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestCos">
+        <methods>
+          <include name="cosOfNumber" invocation-numbers="0 1 2 3"/>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestDivNegative">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestTg">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+          <include name="tgOfNumber" invocation-numbers="0 1"/>
+        </methods>
+      </class>
+      <class name="TestSubDouble">
+        <methods>
+          <include name="firstMinusSecondDP"/>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestIsPositive">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestSin">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestSumDouble">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="TestDivNegativeDouble">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+          <include name="doubleDivisionOnZero"/>
+        </methods>
+      </class>
+      <class name="TestDivDouble">
+        <methods>
+          <include name="setup"/>
+          <include name="checkTime"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

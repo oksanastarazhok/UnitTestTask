@@ -20,14 +20,14 @@ public class TestSubDouble extends BaseTest {
     public static Object[][] DataForSubDouble() {
         return new Object[][]{
                 {5.5, 5.5, 0},
-                {-1.85, -1.15, -0.7},
+                {-1.85, -1.15, -0.7000000000000002},
                 {0, 1.5, -1.5}};
     }
 
     @Test(description = "Verifies subtraction for double type", groups = {"double"})
     public void firstMinusSecondDP() {
-        double sub = calculator.sub( firstD, secondD );
-        Assert.assertEquals( sub, expectedD );
+        double sub = calculator.sub(firstD, secondD);
+        Assert.assertEquals(sub, expectedD);
 
     }
 }

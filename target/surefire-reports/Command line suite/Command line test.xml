@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="EPBYMINW6148" tests="63" failures="13" timestamp="20 Apr 2018 07:18:20 GMT" time="0.053" errors="0">
+  <testcase name="firstDivideSecond" time="0.002" classname="TestDiv"/>
+  <testcase name="firstDivideSecond" time="0.0" classname="TestDiv"/>
+  <testcase name="firstDivideSecond" time="0.0" classname="TestDiv"/>
+  <testcase name="firstTimesSecond" time="0.0" classname="TestMult"/>
+  <testcase name="firstTimesSecond" time="0.0" classname="TestMult"/>
+  <testcase name="firstTimesSecond" time="0.0" classname="TestMult"/>
+  <testcase name="firstTimesSecond" time="0.0" classname="TestMult"/>
+  <testcase name="firstMinusSecondLong" time="0.0" classname="TestSub"/>
+  <testcase name="firstMinusSecondLong" time="0.0" classname="TestSub"/>
+  <testcase name="firstMinusSecondLong" time="0.0" classname="TestSub"/>
+  <testcase name="firstMinusSecondLong" time="0.0" classname="TestSub"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSum"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSum"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSum"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSum"/>
+  <testcase name="tgOfNumber" time="0.016" classname="TestTg">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;0.0&amp;gt; but was:&amp;lt;NaN&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<0.0> but was:<NaN>
+	at TestTg.tgOfNumber(TestTg.java:10)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="tgOfNumber" time="0.0" classname="TestTg">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;0.9981778976111987&amp;gt; but was:&amp;lt;1.0&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<0.9981778976111987> but was:<1.0>
+	at TestTg.tgOfNumber(TestTg.java:10)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="tgOfNumber" time="0.0" classname="TestTg"/>
+  <testcase name="doubleDivisionOnZero" time="0.0" classname="TestDivNegativeDouble">
+    <failure type="org.testng.TestException" message="
+Expected exception java.lang.NumberFormatException but got org.testng.TestException: 
+Method TestDivNegativeDouble.doubleDivisionOnZero() should have thrown an exception of class java.lang.NumberFormatException">
+      <![CDATA[org.testng.TestException: 
+Method TestDivNegativeDouble.doubleDivisionOnZero() should have thrown an exception of class java.lang.NumberFormatException
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Method TestDivNegativeDouble.doubleDivisionOnZero() should have thrown an exception of class java.lang.NumberFormatException
+	... 27 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="checkNumber" time="0.0" classname="TestIsPositive"/>
+  <testcase name="checkNumber" time="0.0" classname="TestIsPositive"/>
+  <testcase name="checkNumber" time="0.0" classname="TestIsPositive"/>
+  <testcase name="checkNumber" time="0.0" classname="TestIsPositive"/>
+  <testcase name="sinOfNumber" time="0.0" classname="TestSin"/>
+  <testcase name="sinOfNumber" time="0.0" classname="TestSin"/>
+  <testcase name="sinOfNumber" time="0.0" classname="TestSin"/>
+  <testcase name="sinOfNumber" time="0.0" classname="TestSin"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSumDouble"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSumDouble"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSumDouble"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSumDouble"/>
+  <testcase name="firstPlusSecond" time="0.0" classname="TestSumDouble"/>
+  <testcase name="sqrtOfNumber" time="0.0" classname="TestSqrt"/>
+  <testcase name="sqrtOfNumber" time="0.0" classname="TestSqrt"/>
+  <testcase name="sqrtOfNumber" time="0.0" classname="TestSqrt"/>
+  <testcase name="cosOfNumber" time="0.0" classname="TestCos">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;1.0&amp;gt; but was:&amp;lt;0.0&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<1.0> but was:<0.0>
+	at TestCos.cosOfNumber(TestCos.java:11)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="cosOfNumber" time="0.0" classname="TestCos">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;0.0&amp;gt; but was:&amp;lt;1.0&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<0.0> but was:<1.0>
+	at TestCos.cosOfNumber(TestCos.java:11)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="cosOfNumber" time="0.0" classname="TestCos">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;1.0&amp;gt; but was:&amp;lt;-2.4492935982947064E-16&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<1.0> but was:<-2.4492935982947064E-16>
+	at TestCos.cosOfNumber(TestCos.java:11)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="cosOfNumber" time="0.0" classname="TestCos">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;-1.0&amp;gt; but was:&amp;lt;1.2246467991473532E-16&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<-1.0> but was:<1.2246467991473532E-16>
+	at TestCos.cosOfNumber(TestCos.java:11)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="checkNumber" time="0.0" classname="TestIsNegative">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;false&amp;gt; but was:&amp;lt;true&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<false> but was:<true>
+	at TestIsNegative.checkNumber(TestIsNegative.java:28)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 31 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="checkNumber" time="0.0" classname="TestIsNegative">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at TestIsNegative.checkNumber(TestIsNegative.java:28)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 31 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="checkNumber" time="0.0" classname="TestIsNegative"/>
+  <testcase name="checkNumber" time="0.0" classname="TestIsNegative">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;true&amp;gt; but was:&amp;lt;false&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+	at TestIsNegative.checkNumber(TestIsNegative.java:28)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 31 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="firstTimesSecond" time="0.0" classname="TestMultDouble"/>
+  <testcase name="firstTimesSecond" time="0.015" classname="TestMultDouble"/>
+  <testcase name="firstTimesSecond" time="0.0" classname="TestMultDouble">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;0.25&amp;gt; but was:&amp;lt;0.0&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<0.25> but was:<0.0>
+	at TestMultDouble.firstTimesSecond(TestMultDouble.java:31)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="firstTimesSecond" time="0.0" classname="TestMultDouble"/>
+  <testcase name="devisionOnZero" time="0.0" classname="TestDivNegative"/>
+  <testcase name="ctgOfNumber" time="0.0" classname="TestCtg"/>
+  <testcase name="ctgOfNumber" time="0.0" classname="TestCtg"/>
+  <testcase name="ctgOfNumber" time="0.0" classname="TestCtg"/>
+  <testcase name="powDivisionOnZero" time="0.0" classname="TestPowNegative">
+    <failure type="org.testng.TestException" message="
+Expected exception java.lang.ArithmeticException but got org.testng.TestException: 
+Method TestPowNegative.powDivisionOnZero() should have thrown an exception of class java.lang.ArithmeticException">
+      <![CDATA[org.testng.TestException: 
+Method TestPowNegative.powDivisionOnZero() should have thrown an exception of class java.lang.ArithmeticException
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Method TestPowNegative.powDivisionOnZero() should have thrown an exception of class java.lang.ArithmeticException
+	... 27 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="firstMinusSecondDP" time="0.0" classname="TestSubDouble"/>
+  <testcase name="firstMinusSecondDP" time="0.0" classname="TestSubDouble">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;-0.7&amp;gt; but was:&amp;lt;-0.7000000000000002&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<-0.7> but was:<-0.7000000000000002>
+	at TestSubDouble.firstMinusSecondDP(TestSubDouble.java:30)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="firstMinusSecondDP" time="0.0" classname="TestSubDouble"/>
+  <testcase name="testPow" time="0.0" classname="TestPow"/>
+  <testcase name="testPow" time="0.0" classname="TestPow"/>
+  <testcase name="testPow" time="0.0" classname="TestPow"/>
+  <testcase name="testPow" time="0.0" classname="TestPow"/>
+  <testcase name="testPow" time="0.0" classname="TestPow"/>
+  <testcase name="testPow" time="0.0" classname="TestPow"/>
+  <testcase name="firstDivideSecond" time="0.0" classname="TestDivDouble"/>
+  <testcase name="firstDivideSecond" time="0.0" classname="TestDivDouble"/>
+</testsuite>
